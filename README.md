@@ -5,8 +5,8 @@ Toned is a wonderful new fitness tracker to help you reach and maintain all of y
 
 ## Authors
 
+- [Jaxon Johnson] (https://github.com/WaffleKone)
 - [Joey Hoellerich](https://github.com/JoeyHoellerich)
-- [Jaxson Johnson] (https://github.com/WaffleKone)
 - [Joseph Lee] (https://github.com/jjlee90)
 - [Dimitri Ferguson] (https://github.com/Dimitriferg)
 
