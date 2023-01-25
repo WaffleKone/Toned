@@ -1,6 +1,6 @@
 import { Container, Box } from "@mui/material"
 import React, { useEffect, useState, useContext } from "react"
-import { useParams, useNavigate } from "react-router"
+import { useNavigate } from "react-router"
 import { Link } from "react-router-dom"
 import UserContext from "../../context/UserContext"
 import Navbar from "../navbar/Nav"
@@ -38,7 +38,7 @@ export default function WorkoutPage() {
   // This method fetches the records from the database
   useEffect(() => {
     async function getExercises() {
-      const response = await fetch(`https://toned-mern.herokuapp.com/exercise/${username}`)
+      const response = await fetch(`http://localhost:3000/exercise/${username}`)
 
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`
@@ -56,7 +56,7 @@ export default function WorkoutPage() {
 
   // This method will delete a record
   async function deleteExercise(id) {
-    await fetch(`https://toned-mern.herokuapp.com/exercise/${id}`, {
+    await fetch(`http://localhost:3000/exercise/${id}`, {
       method: "DELETE",
     })
 

@@ -36,7 +36,7 @@ export default function CreateWorkout() {
     // When a post request is sent to the create url, we'll add a new record to the database.
     const newExercise = { ...form }
 
-    await fetch("https://toned-mern.herokuapp.com/exercise", {
+    await fetch("http://localhost:3000/exercise", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
