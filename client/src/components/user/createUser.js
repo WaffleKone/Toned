@@ -6,7 +6,7 @@ import createUserTitle from "../../imgs/signup-title.svg"
 import UserContext from "../../context/UserContext"
 
 export default function CreateUser() {
-  const { user, updateUser } = useContext(UserContext)
+  const { updateUser } = useContext(UserContext)
 
   const inputBoxStyle = [{ margin: "auto" }, { paddingBottom: "15px" }]
 

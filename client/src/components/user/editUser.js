@@ -48,7 +48,7 @@ export default function Edit() {
     // This will send a post request to update the data in the database.
     await fetch(`https://toned-mern.herokuapp.com/update/${params.id}`, {
       method: "POST",
-      body: JSON.stringify(editedExercise),
+      body: JSON.stringify(editedUser),
       headers: {
         "Content-Type": "application/json",
       },
